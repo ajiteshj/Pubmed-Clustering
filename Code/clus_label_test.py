@@ -15,7 +15,7 @@ print(data_frame)
 # Select labels based on top terms in each cluster obtained in previous program ( Change each time the previous code abs_process4.py is run
 label_dict = {0:'lynch syndrome', 1:'turner syndrome', 2:'noonan syndrome', 3:'lung adenocarcinoma', 4:'marfan syndrome'}
 
-with open('./result_test3.txt', 'a', encoding='utf-8') as fout:
+with open('./result_test2.txt', 'a', encoding='utf-8') as fout:
     for i, row in data_frame.iterrows():    # write the result to an output file.
         fout.write(str(row['title']) + '\t' + str(label_dict[row['cluster']]) + '\n')
 
